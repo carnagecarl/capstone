@@ -1,0 +1,285 @@
+body {
+    background-color: #000851; /* Adjust the color as needed */
+    margin: 0;
+    padding: 0;
+}
+
+p {
+  color: skyblue;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: monospace;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+ul li{    
+  float: right;
+}
+ 
+ul li a {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; 
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+  background-color: transparent;
+  font-weight: bold;
+  font-family: san-serif;
+  margin-top: 15px;
+  border: solid 1px white;
+  width: 240px;
+}
+
+li ul a {
+  border-color: green;
+  background-color: green;
+  font: bold;
+}
+          
+li ul a:hover{
+  font-weight: bold;
+  font-family: monospace;
+  margin-top: 14px;
+  background-color: transparent;
+  border: solid 1px red;
+  width: 200px;
+  color: white;
+}
+
+ul {
+  float: right;
+  list-style: none;
+  padding-right: 200px;
+  float-left: 100px;  
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+}
+.dropdown {
+  display: inline-block;
+}
+
+ul li a{
+  display: block;
+  padding: 10px 5px;
+  color: white;
+  font-family: monospace;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+  position: relative;
+  bottom:  80px;
+}
+
+ul li ul.dropdown {
+  width: 84%;
+  position: relative;
+  display: inline-block;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+}
+
+.title h1 {
+  color: white;
+  font-family: sans-serif;
+  position: absolute;
+  font-size: 50px;
+  top: 200px;
+  left: 360px;
+}
+
+.title h2 {
+  color: white;
+  position: absolute;
+  font-family: sans-serif;
+  font-size: 40px;
+  top: 300px;
+  left: 100px;
+}
+ 
+.logout {
+   color:  yellow;
+   font-family: Andale Mono, monospace;
+   font-size: 18px;
+   position: absolute;
+   border-radius: 10px;
+   padding: 10px 15px;
+   font-weight: bold;
+   left: 1200px;
+   top: 30px;
+   text-decoration: none;
+ }                   
+img {
+  width: 10%;
+  position: relative;
+  left: 245px;
+bottom: 70px;
+}
+.logout::after {
+    content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* Center the starting point */
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+
+} 
+.logout:hover::after {
+  width: 70%;
+}
+  
+table {
+    border-collapse: collapse;
+    border-spacing: 2;
+    width: 80%;
+    position: relative;
+    top: 50px;
+    border: 2px solid black;
+}
+
+th, td {
+    text-align: center;
+    padding: 25px;
+    background-color: black;
+}
+
+tr:nth-child {
+    background-color: black;
+}
+
+th {
+    color: white;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+.tobol {
+    background-color: black;
+}
+
+.btn-primary {
+    text-decoration: none;
+}
+
+td {
+    background-color: transparent;
+    color: white;
+    font-family: sans-serif;
+}
+
+td {
+    border: 1px solid white;
+}
+
+td, th {
+    background-color: transparent;
+}
+
+.bttn {
+    background-color: blue;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.add {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-size: 20px;
+    font-family: monospace;
+    border: 2px solid white;
+    padding:  5px 25px;
+    width: 10px;
+     top: 20px;
+     right: 560px;
+}
+/* Styles for the modal */
+.modal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      z-index: 999;
+      transform: translate(-50%, -50%);
+      background-color: #fefefe;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 400px; /* Adjust width as needed */
+   }
+
+.modal-content {
+    background-color:  blanchedalmond;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+
+/* Additional styles for the form elements */
+h2 {
+    font-family: sans-serif;
+    position: relative;
+    bottom: 20px;
+    border: 2px dotted darkgreen;
+    padding: 5px;
+    color: black;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+}
+select {
+   width: 99%;
+    padding: 10px;
+    margin: 5px 0;  
+}
+option {
+
+}
+
+.button {
+    background-color: #4CAF50;
+    position: relative;
+    top: 30px;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.buttonS {
+    background-color: red;
+    position: relative;
+    top: 30px;
+    color: white;
+    border: none;
+    padding: 10px 120px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+

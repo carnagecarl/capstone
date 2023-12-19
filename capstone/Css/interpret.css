@@ -1,0 +1,121 @@
+body {
+    background-color: #000851; /* Adjust the color as needed */
+    margin: 0;
+    padding: 0;
+}
+
+p {
+  color: skyblue;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: monospace;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+ul li{    
+  float: right;
+}
+ 
+ul li a {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; 
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+  background-color: transparent;
+  font-weight: bold;
+  font-family: san-serif;
+  margin-top: 15px;
+  border: solid 1px white;
+  width: 240px;
+}
+
+li ul a {
+  border-color: green;
+  background-color: green;
+  font: bold;
+}
+          
+li ul a:hover{
+  font-weight: bold;
+  font-family: monospace;
+  margin-top: 14px;
+  background-color: transparent;
+  border: solid 1px red;
+  width: 200px;
+  color: white;
+}
+
+ul {
+  float: right;
+  list-style: none;
+  padding-right: 200px;
+  float-left: 100px;  
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+}
+.dropdown {
+  display: inline-block;
+}
+
+ul li a{
+  display: block;
+  padding: 10px 5px;
+  color: white;
+  font-family: monospace;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+  position: relative;
+  bottom:  80px;
+}
+
+ul li ul.dropdown {
+  width: 84%;
+  position: relative;
+  display: inline-block;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+}
+.logout {
+   color:  yellow;
+   font-family: Andale Mono, monospace;
+   font-size: 18px;
+   position: absolute;
+   border-radius: 10px;
+   padding: 10px 15px;
+   font-weight: bold;
+   left: 1200px;
+   top: 30px;
+   text-decoration: none;
+ }                 
+img {
+  width: 10%;
+  position: relative;
+  left: 245px;
+bottom: 70px;
+}
+.logout::after {
+    content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* Center the starting point */
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+
+} 
+.logout:hover::after {
+  width: 70%;
+}

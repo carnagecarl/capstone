@@ -1,0 +1,211 @@
+body {
+    background-color: #000851; /* Adjust the color as needed */
+    margin: 0;
+    padding: 0;
+}
+
+p {
+  color: skyblue;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: monospace;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+ul li{    
+  float: right;
+}
+ 
+ul li a {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; 
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+  background-color: transparent;
+  font-weight: bold;
+  font-family: san-serif;
+  margin-top: 15px;
+  border: solid 1px white;
+  width: 240px;
+}
+
+li ul a {
+  border-color: green;
+  background-color: green;
+  font: bold;
+}
+          
+li ul a:hover{
+  font-weight: bold;
+  font-family: monospace;
+  margin-top: 14px;
+  background-color: transparent;
+  border: solid 1px red;
+  width: 200px;
+  color: white;
+}
+
+ul {
+  float: right;
+  list-style: none;
+  padding-right: 200px;
+  float-left: 100px;  
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+}
+.dropdown {
+  display: inline-block;
+}
+
+ul li a{
+  display: block;
+  padding: 10px 5px;
+  color: white;
+  font-family: monospace;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+  position: relative;
+  bottom:  80px;
+}
+
+ul li ul.dropdown {
+  width: 84%;
+  position: relative;
+  display: inline-block;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+}
+
+.title h1 {
+  color: white;
+  font-family: sans-serif;
+  position: absolute;
+  font-size: 50px;
+  top: 200px;
+  left: 360px;
+}
+
+.title h2 {
+  color: white;
+  position: absolute;
+  font-family: sans-serif;
+  font-size: 40px;
+  top: 300px;
+  left: 100px;
+}
+ 
+.logout {
+   color:  yellow;
+   font-family: Andale Mono, monospace;
+   font-size: 18px;
+   position: absolute;
+   border-radius: 10px;
+   padding: 10px 15px;
+   font-weight: bold;
+   left: 1200px;
+   top: 30px;
+   text-decoration: none;
+ }                 
+img {
+  width: 10%;
+  position: relative;
+  left: 245px;
+bottom: 70px;
+}
+.logout::after {
+    content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* Center the starting point */
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+
+} 
+.logout:hover::after {
+  width: 70%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    background-color: transparent;
+      box-shadow: 5px 30px 15px rgba(1,1,0,.5);
+    border-radius: 30px;
+    padding: 4px 160px;
+    position: absolute;
+    left: 480px;
+    top: 110px;
+    max-width: 100px;
+    width: 100%;
+    position: relative;
+}
+h1 {
+  color: white;
+  font-family: sans-serif;
+}
+label {
+    font-weight: bold;
+    color: white;
+    position: relative;
+    right: 100px;
+    font-family: sans-serif;
+    font-size: 14px;
+
+}
+
+input[type="text"],
+input[type="datetime-local"] {
+    width: 200%;
+    padding: 8px 10px;
+    position: relative;
+    right: 50px;
+    top: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border-color: black;
+}
+textarea {
+  width: 200%;
+    padding: 8px 10px;
+    position: relative;
+    right: 50px;
+    top: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.save {
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  position: relative;
+  right: 50px;
+  top: 20px;
+}
+.cancel {
+  background-color: red;
+  font-size: 20px;
+  color: white;
+  border-radius: 10px;
+  position: relative;
+  left: 60px;
+  bottom: 10px;
+}

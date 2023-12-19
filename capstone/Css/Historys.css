@@ -1,0 +1,122 @@
+body {
+    background-color: #000851; /* Adjust the color as needed */
+    margin: 0;
+    padding: 0;
+}
+ .back {
+ 	color: yellow;
+ 	text-decoration: none;
+   font-family: sans-serif;
+   position: relative;
+   left: 650px;
+   top: 60px;
+ }              
+.back::after {
+    content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* Center the starting point */
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+
+} 
+input {
+	border-style: none;
+	color: black;
+}
+.back:hover::after {
+  width: 110%;
+}
+table {
+	width: 70%;
+	position: relative;
+	top: 80px;
+	left: 200px;
+	background-color: white;
+}
+th {
+	color: white;
+	text-align: center;
+	padding: 20px ;
+	width: 30%;
+}
+td{
+	color: black;
+	padding: 10px;
+	background-color: white;
+
+	text-align: center;
+}
+table,th,td {
+	border: 1px solid  black;
+
+	border-collapse: collapse;
+}
+table {
+	background-color: black;
+}
+.link-dark {
+	color: white;
+	font-family: cursive;
+}
+
+.table-container {
+    /* Add your default styles here */
+}
+
+.scrollable-table {
+            max-height: 200px; /* Adjust the height as needed */
+            overflow-y: !important;
+        }
+
+.Print {
+     background-color: green;
+	 color: white;
+	 position: absolute;
+	 border-radius: 5px;
+	 padding: 5px 15px;
+	 font-family: Arial, Helvetica, sans-serif;
+	 font-weight: bold;
+	 float: right;
+	 right: 100px;
+	 bottom: 450px;
+	 font-size: 20px;
+}
+.History {
+	background-color: blue;
+	color: white;
+	position: absolute;
+	border-radius: 5	px;
+	padding: 5px 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 19px;
+	float: right;
+	right: 190px;
+	bottom: 450px;
+}
+.bttn {
+  color: black;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: lawngreen;
+  padding: 10px;
+  position: relative;
+  align-content: center;
+  left: 600px;
+  top: 20px;
+}
+@media print {
+	body * {
+
+		visibility: hidden;
+	}
+	table,thead,tr * {
+		visibility: visible;
+	}
+	
+}
